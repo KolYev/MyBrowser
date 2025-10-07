@@ -3,5 +3,8 @@
         "xstring": "cpp",
         "string": "cpp",
         "iostream": "cpp"
+    },
+    "code-runner.executorMap": {
+        "cpp": "cd $workspaceRoot && g++ -std=c++17 main.cpp network/http_client.cpp parser/html_parser.cpp renderer/dom.cpp renderer/renderer.cpp ui/window.cpp -o main -I./vcpkg/installed/x64-windows/include -L./vcpkg/installed/x64-windows/lib -lcurl -static-libgcc -static-libstdc++ && $workspaceRoot/main"
     }
 }
